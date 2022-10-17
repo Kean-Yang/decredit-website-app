@@ -1,0 +1,224 @@
+@import '../../styles/variables';
+@import '../../styles/_common.scss';
+
+.rank-list {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (max-width: $MobileWidth-M) {
+        margin-bottom: 80px;
+    }
+
+    .banner {
+        background-image: url('../../assets/banner.png');
+        background-size: 100% 100%;
+        overflow: hidden;
+        position: relative;
+        min-height: 512px;
+
+        .title {
+            max-width: 1040px;
+            margin: 0 auto;
+
+            .left {
+                margin: 116px 0 0 0px;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    margin: 116px 0 0 20px;
+                }
+
+                .bannerIcon {
+                    max-width: 294px;
+                }
+
+                .back {
+                    width: 168px;
+                    height: 46px;
+                    border-radius: 22px;
+                    opacity: 0.9;
+                    border: 2px solid #FFFFFF;
+                    color: #FFFFFF;
+                    @include txt-content;
+                    cursor: pointer;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    margin-top: 10px;
+
+                    &:hover {
+                        color: #2B45AB;
+                        background-color: white;
+                    }
+                }
+            }
+
+            .banner {
+                margin-bottom: 86px;
+                margin-left: 20%;
+                float: right;
+            }
+
+
+        }
+    }
+
+    .rank-list-data {
+        max-width: 1040px;
+        margin: 18px auto 80px auto;
+        background: #FFFFFF;
+        border-radius: 20px 20px 100px 20px;
+        overflow: hidden;
+        padding: 60px 62px;
+        position: relative;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            padding: 22px 12px 60px 12px;
+            margin: 0 22px;
+        }
+
+        h1 {
+            font-size: 38px;
+            font-weight: 900;
+            color: #2336AB;
+            line-height: 56px;
+            text-align: center;
+
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 60px;
+            line-height: 44px;
+            border-bottom: 1px solid #CED6DC;
+            font-weight: 400;
+            color: #222222;
+            font-size: 18px;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                font-size: 14px;
+                margin-top: 32px;
+            }
+        }
+
+        .list {
+            line-height: 56px;
+            font-weight: 400;
+            color: #222222;
+            font-size: 18px;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                font-size: 14px;
+            }
+
+            .data {
+                cursor: pointer;
+                overflow: hidden;
+                border-left: 2px solid #FFFFFF;
+
+                &:hover {
+                    background: #E7F1FD;
+                    border-left: 2px solid #0072EA;
+                }
+
+            }
+
+            .ant-row {
+                border-bottom: 1px solid #CED6DC;
+
+                img {
+                    width: 44px;
+                    height: 44px;
+                    margin: 5px 0;
+                }
+
+                p {
+                    width: 44px;
+                    text-align: center;
+                }
+
+                a {
+                    color: #222222;
+                }
+
+                .ant-col {
+                    &:last-child {
+                        padding-right: 22px;
+                    }
+
+                }
+            }
+
+
+            .Skeleton {
+
+                width: 100%;
+                height: 28px !important;
+                overflow: hidden;
+                margin: 14px 0;
+
+                border-radius: 4px;
+                background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(190, 190, 190, 0.2)), color-stop(37%, rgba(129, 129, 129, 0.24)), color-stop(63%, rgba(190, 190, 190, 0.2)));
+                background: linear-gradient(90deg, rgba(190, 190, 190, 0.2) 25%, rgba(129, 129, 129, 0.24) 37%, rgba(190, 190, 190, 0.2) 63%);
+                background-size: 400% 100%;
+                -webkit-animation: ant-skeleton-loading 1.4s ease infinite;
+                animation: ant-skeleton-loading 1.4s ease infinite;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+
+                @-webkit-keyframes ant-skeleton-loading {
+                    0% {
+                        background-position: 100% 50%;
+                    }
+
+                    100% {
+                        background-position: 0 50%;
+                    }
+                }
+
+                @keyframes ant-skeleton-loading {
+                    0% {
+                        background-position: 100% 50%;
+                    }
+
+                    100% {
+                        background-position: 0 50%;
+                    }
+                }
+            }
+
+            .no-data {
+                div {
+                    text-align: center;
+                }
+            }
+
+
+
+        }
+
+        .rankList-foot-icon {
+            max-width: 105px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .ant-row {
+            overflow: hidden;
+
+            .ant-col {
+                &:first-child {
+                    text-align: left;
+                }
+
+                &:last-child {
+                    text-align: right;
+                }
+
+            }
+        }
+    }
+}

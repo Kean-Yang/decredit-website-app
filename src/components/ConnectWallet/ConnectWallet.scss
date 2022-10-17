@@ -1,0 +1,153 @@
+@import '../../styles/variables';
+
+.connect-wallet-modal {
+    overflow: hidden;
+    margin: auto;
+
+
+    .ant-modal-content {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+
+        .ant-modal-body {
+            margin: 0;
+            padding: 0;
+
+            .wallet-title {
+                img {
+                    width: 96px;
+                    height: 96px;
+                    margin: 0 auto;
+                }
+            }
+
+            .content {
+                background-color: white;
+                margin-top: -58px;
+                border-radius: 14px;
+                overflow: hidden;
+
+                .content-title {
+                    background-image: url('../../assets//com//connect-wallet-header.png');
+                    height: 158px;
+                    width: 100%;
+                    background-size: 100% 100%;
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        height: 148px;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                        line-height: 30px;
+                        letter-spacing: 1px;
+                        padding-top: 40px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                        color: #FFFFFF;
+                        line-height: 20px;
+                        letter-spacing: 1px;
+                        width: 100%;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .connect-wallet-content {
+                .wallet-title {
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .content {
+                    background-color: white;
+                    margin-top: -58px;
+                    border-radius: 20px;
+                    overflow: hidden;
+
+
+                    .content-content {
+
+                        ul {
+                            min-height: 194px;
+                            padding-top: 64px;
+
+                            @media screen and (max-width: $MobileWidth-M) {
+                                padding-top: 24px;
+                                min-height: 84px;
+                            }
+
+                            li {
+                                display: flex;
+                                justify-content: center;
+
+                                img {
+                                    width: 36px;
+                                    height: 36px;
+                                    cursor: pointer;
+                                    margin-right: 20px;
+                                }
+
+                                span {
+                                    font-weight: 500;
+                                    color: #222222;
+                                    line-height: 36px;
+                                    letter-spacing: 1px;
+                                    cursor: pointer;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    .footer {
+                        width: 100%;
+                        height: 70px;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+    }
+
+
+
+
+    .close {
+        text-align: center;
+
+        .route {
+            width: 1px;
+            height: 90px;
+            margin: 0 auto;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                height: 40px;
+            }
+        }
+
+        .close-but {
+            width: 38px;
+            height: 38px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+
+}

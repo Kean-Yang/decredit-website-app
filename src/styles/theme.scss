@@ -1,0 +1,96 @@
+// 白天模式
+.light {
+    --theme-nav-background: #FFFFFF; //header 背景
+    --theme-contnect-wallet-background: #02353C; // 链接钱包背景
+    --theme-pagination-active-background: #B4E3BD; // 分页按钮
+    --theme-contnect-wallet-color: #f4f4f4; // 链接钱包字体
+    --theme-wallet-account-color: #02353C; // 用户账号
+    --theme-menu-active-background: #9CCBA5; //选中菜单颜色
+    --theme-layout-background: #f4f4f4; // 内容页面背景颜色
+    --theme-menu-background: #5AB16A; // 菜单背景色
+    --theme-page-background: #FFF;
+    --theme-page-title-color: #5AB16A;
+    --theme-list-select-background: #B4E3BD;
+    --theme-list-select-active-background: #5AB16A;
+    --theme-auctions-detalis-background: rgba(2, 53, 60, 0.5);
+    --theme-custom-breadcrumb-color: rgba(2, 53, 60, 0.5);
+    --theme-join-amount-background: #B4E3BD;
+    --theme-button-whiteblue-color: #FFFFFF;
+    --theme-input-placeholder-color: rgba(2, 53, 60, 0.5);
+
+
+
+    --theme-home-background: linear-gradient(180deg, #D7E3FF 0%, rgba(255, 255, 255, 0) 47.44%),
+        #FFFFFF;
+    --theme-color: #A80000;
+
+    --theme-page-text: #111;
+    --theme-text-color: #000000;
+    --theme-button-background: #02353C;
+
+    --theme-switch-Languages-icon: -126px 0;
+    --theme-switch-lightDark-icon: -108px 0;
+    --theme-switch-light-icon: 0px 0;
+    --theme-switch-dark-icon: -18px 0;
+
+    --theme-socials-background: #D9D9D9;
+    --theme-data-name-color: #ABABAB;
+    // --theme-lepricon-Details-background: url('../assets/lepricon-details-bg.png'); // 
+    // --theme-category-lightdark-background: url('../assets/create-auction-category-light.png'); // 
+    --theme-details-join-background: #FFFFFF;
+    --theme-details-join-border: 1px solid #000000;
+
+    --theme-create-category-l: -60px 0; // auctions/create/category iocn
+    --theme-create-category-r: -88px 0;
+    --theme-create-category-input-background: #FFFFFF !important;
+    --theme-create-swapaution-border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+// 黑夜模式
+.dark {
+    --theme-nav-background: #02353C;
+    --theme-contnect-wallet-background: #C1F6ED;
+    --theme-pagination-active-background: #02353C; // 分页按钮
+    --theme-contnect-wallet-color: #000000;
+    --theme-wallet-account-color: #449342;
+    --theme-layout-background: #474848;
+    --theme-menu-background: #02353C;
+    --theme-menu-active-background: #1C474D;
+    --theme-page-background: #585757;
+    --theme-page-title-color: #FFFFFF;
+    --theme-list-select-background: #9ACFCD;
+    --theme-list-select-active-background: #02353C;
+    --theme-auctions-detalis-background: rgba(255, 255, 255, 0.5);
+    --theme-custom-breadcrumb-color: rgba(255, 255, 255, 0.5);
+    --theme-join-amount-background: #A7D8D6;
+    --theme-button-whiteblue-color: #02353C;
+    --theme-input-placeholder-color: rgba(2, 53, 60, 1);
+
+
+
+
+    --theme-home-background: linear-gradient(180deg, #202020 19.12%, #000000 67.14%);
+    --theme-color: #0000A8;
+
+    --theme-page-text: #FFF;
+    --theme-text-color: #FFFFFF;
+    --theme-button-background: linear-gradient(96.11deg, #3F7FFF 26.15%, #48C4F9 135.1%),
+        #FFFFFF;
+    --theme-switch-Languages-icon: -90px 0;
+    --theme-switch-lightDark-icon: -72px 0;
+    --theme-switch-light-icon: -36px 0;
+    --theme-switch-dark-icon: -54px 0;
+
+    --theme-socials-background: #343533;
+    --theme-data-name-color: #FFFFFF;
+    // --theme-lepricon-Details-background: url('../assets/dark/lepricon-details-dark-bg.png'); // 
+    // --theme-category-lightdark-background: url('../assets/create-auction-category-dark.png'); // 
+    --theme-details-join-background: #343533;
+    --theme-details-join-border: 1px solid #439CFD;
+
+
+    --theme-create-category-l: 0 0;
+    --theme-create-category-r: -32px 0;
+    --theme-create-category-input-background: #000000 !important;
+    --theme-create-swapaution-border: 1px solid #FFFFFF;
+}

@@ -1,0 +1,204 @@
+@import '../../styles/common.scss';
+
+.comp-balanceWith-modal {
+    @media screen and (max-width: $MobileWidth-M) {
+        width: 80% !important;
+    }
+
+    .ant-modal-content {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+
+        .ant-modal-body {
+            margin: 0;
+            padding: 0;
+
+            .comp-balanceWith {
+                position: relative;
+
+                .header {
+                    overflow: hidden;
+                    font-size: 20px;
+                    @include PingFangSC-Regular-text;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    line-height: 28px;
+                    position: relative;
+
+                    p {
+                        margin: 42px;
+                    }
+
+                    svg {
+                        position: absolute;
+                        color: #FFFFFF;
+                        font-size: 18px;
+                        top: 38px;
+                        right: 38px;
+                    }
+
+
+                }
+
+
+                .comp-BalanceWith-content {
+                    background-color: white;
+                    margin-top: -24px;
+                    border-radius: 14px;
+                    overflow: hidden;
+                    text-align: center;
+                    border-radius: 20px;
+
+                    .content-header {
+                        background-image: url('../../assets//com//connect-wallet-header.png');
+                        height: 158px;
+                        width: 100%;
+                        background-size: 100% 100%;
+                        position: relative;
+
+                        p {
+                            text-align: left;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #FFFFFF;
+                            line-height: 30px;
+                            letter-spacing: 2px;
+                            padding: 30px 30px 0;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: #FFFFFF;
+                            line-height: 28px;
+                            letter-spacing: 2px;
+                            width: 100%;
+                            text-align: center;
+                            display: inline-block;
+                        }
+
+                        svg {
+                            position: absolute;
+                            color: #FFFFFF;
+                            font-size: 18px;
+                            top: 30px;
+                            right: 38px;
+                        }
+                    }
+
+                    .comp-BalanceWith-title {
+                        border-bottom: 1px solid #CED6DC;
+                        padding-bottom: 22px;
+                        margin: 0 30px;
+
+                        img {
+                            width: 86px;
+                            height: 86px;
+                            margin: 0 auto;
+                            display: inline-block;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #000000;
+                            line-height: 28px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #868686;
+                            line-height: 28px;
+                        }
+                    }
+
+                    .content {
+                        border-top: 1px solid #CED6DC;
+                        border-bottom: 1px solid #CED6DC;
+                        margin: 12px 30px 0;
+                        padding: 12px 0px;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            margin: 22px 12px;
+                        }
+
+                        ul {
+                            li {
+                                display: flex;
+                                justify-content: space-between;
+                                margin: 10px 0;
+
+                                span {
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    display: flex;
+                                    align-items: center;
+                                    font-weight: 400;
+                                    color: #222222;
+
+                                    &:first-child {
+                                        font-weight: 400;
+                                        color: #222222;
+                                        text-align: left;
+                                    }
+
+                                    &:last-child {
+                                        font-weight: 600;
+                                        color: #222222;
+                                        text-align: right;
+                                    }
+                                }
+
+                                @mixin operation-but {
+                                    border-radius: 30px;
+                                    min-width: 92px;
+                                    height: 36px;
+                                    padding: 0 10px;
+
+                                    span {
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                        color: #FFFFFF;
+                                        letter-spacing: 1px;
+                                        display: flex;
+                                        text-align: center;
+                                        align-items: center;
+                                        display: initial;
+                                    }
+                                }
+
+                                .operation-but-active {
+                                    @include operation-but-background;
+                                    @include operation-but;
+                                }
+
+                                .operation-but-disabled {
+                                    background: #B8C0C8;
+                                    @include operation-but;
+                                }
+
+
+
+                            }
+                        }
+                    }
+
+                    .back {
+                        @include operation-blue-but;
+                        margin: 44px auto 70px;
+                        height: 40px;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            margin: 32px auto 50px;
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+}

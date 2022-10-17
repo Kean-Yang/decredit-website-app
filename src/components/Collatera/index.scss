@@ -1,0 +1,183 @@
+@import '../../styles/_common.scss';
+
+.decredit-collatera {
+    .ant-modal-content {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+
+        .ant-modal-body {
+            margin: 0;
+            padding: 0;
+
+            .collatera {
+                .wallet-title {
+                    position: relative;
+
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        margin: 0 auto;
+                    }
+
+                    .close {
+                        position: absolute;
+                        right: 20px;
+                        top: 92px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+
+                .collatera-content {
+                    background-color: white;
+                    margin-top: -58px;
+                    border-radius: 14px;
+                    overflow: hidden;
+                    text-align: center;
+
+                    .content-title {
+                        background-image: url('../../assets//com//connect-wallet-header.png');
+                        height: 158px;
+                        width: 100%;
+                        background-size: 100% 100%;
+
+                        p {
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #FFFFFF;
+                            line-height: 30px;
+                            letter-spacing: 2px;
+                            padding-top: 40px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: #FFFFFF;
+                            line-height: 28px;
+                            letter-spacing: 2px;
+                            width: 100%;
+                            text-align: center;
+                            display: inline-block;
+                        }
+                    }
+
+                    .content-content {
+                        .enter-markets {
+                            margin: 22px 25px;
+
+                            p {
+                                font-size: 15px;
+                                font-weight: 400;
+                                color: #ACB8C0;
+                                line-height: 20px;
+                                text-align: left;
+                            }
+
+                            .data {
+                                margin-top: 8px;
+                                overflow: hidden;
+
+                                .data-item {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 12px;
+                                    padding-bottom: 14px;
+
+                                    &:first-child {
+                                        border-bottom: 1px solid #CED6DC;
+                                    }
+
+                                    span {
+                                        text-align: left;
+                                        font-size: 15px;
+                                        color: #ACB8C0;
+                                        line-height: 20px;
+                                    }
+
+                                    img {
+                                        width: 20px;
+                                        margin: 0 4px;
+                                        display: flex;
+                                        align-items: center;
+
+                                    }
+
+                                    div {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                        color: #222222;
+                                        line-height: 20px;
+                                    }
+                                }
+
+
+                            }
+                        }
+
+                        .exit-market {
+                            font-size: 18px;
+                            color: #888888;
+                            line-height: 28px;
+                            margin: 46px 28px 80px;
+                            text-align: left;
+
+                            p {
+                                font-size: 16px;
+                                color: #888888;
+                                line-height: 24px;
+                                margin-top: 12px;
+                                text-align: left;
+                            }
+                        }
+
+                        img {
+                            width: 218px;
+                            margin: 0 auto;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            color: #222222;
+                            line-height: 20px;
+                            margin-top: 30px;
+                            text-align: center;
+                        }
+
+                        span {
+                            font-size: 16px;
+                            color: #888888;
+                            line-height: 24px;
+                            width: 292px;
+                            word-wrap: break-word;
+                            word-break: normal;
+                        }
+                    }
+
+
+                }
+
+                .back {
+                    @include operation-blue-but;
+                    min-width: 142px;
+                    margin: 44px auto 34px;
+                    border-radius: 22px;
+
+                    span {
+                        display: inline-block;
+                    }
+                }
+
+
+            }
+        }
+    }
+}

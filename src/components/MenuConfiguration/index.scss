@@ -1,0 +1,151 @@
+@import '../../styles/variables';
+
+.menu-configuration-operation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 32px;
+    width: 100%;
+    background-color: var(--theme-menu-background);
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        z-index: 99999999;
+        position: relative;
+        padding-top: 0;
+        margin-top: 42px;
+    }
+
+    @mixin social-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .menu-operation {
+        overflow: hidden;
+        padding: 22px 22px 32px;
+        position: absolute;
+        bottom: 0;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            z-index: 99999999;
+            position: relative;
+            padding: 0 22px;
+        }
+
+        .switch-lan {
+            display: flex;
+            color: #FFFFFF;
+            margin: 0 20px;
+
+            .switch-lan-icon {
+                @include social-icon;
+                margin-right: 10px;
+            }
+
+
+            img {
+                width: 17px;
+                height: 17px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            span {
+                font-size: 14px;
+                line-height: 18px;
+                color: #B3B2D3;
+                cursor: pointer;
+
+            }
+
+            .active {
+                color: #FFFFFF;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+        }
+
+        .switch-lightDark {
+            display: flex;
+            margin: 12px 20px 0;
+
+            .switch-lightdark-icon {
+                @include social-icon;
+                cursor: pointer;
+            }
+
+            .ant-switch {
+                margin: 2px 28px;
+            }
+
+            .ant-switch-checked {
+                background-color: #34C759;
+            }
+
+        }
+
+        .socials {
+            margin-top: 46px;
+
+            @media screen and (max-width: 768px) {
+                margin-top: 22px;
+                padding: 0 18px;
+            }
+
+            li {
+                width: 33.33%;
+                float: left;
+                margin-bottom: 14px;
+
+                @media screen and (max-width: 768px) {
+                    width: auto;
+                    margin-right: 20px;
+                }
+            }
+
+            @mixin social-icon {
+                width: 28px;
+                height: 28px;
+                margin: 0 auto;
+                background-size: 100% 100%;
+
+                @media screen and (max-width: 768px) {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 auto;
+                }
+            }
+
+            .social-icon-0 {
+                @include social-icon;
+
+            }
+
+            .social-icon-1 {
+                @include social-icon;
+            }
+
+            .social-icon-2 {
+                @include social-icon;
+            }
+
+            .social-icon-3 {
+                @include social-icon;
+            }
+
+            .social-icon-4 {
+                @include social-icon;
+            }
+
+            .social-icon-5 {
+                @include social-icon;
+            }
+        }
+
+
+    }
+
+}

@@ -1,0 +1,39 @@
+/* css 变量配置*/
+
+$TitleFontSize: 36px; // title 字体
+$TitleFontSize-M: 36px; // title 字体
+$NavFontSize: 12px; // 导航 字体
+$NavFontSize-M: 12px; // 导航 字体
+$MobileWidth: 768px; // 移动端适配宽度
+$MobileWidth-M: 768px; // 移动端适配宽度
+$BoxButWidth: 250px; // 框内按钮 输入框宽度
+$BoxButWidth-M: 98%; // 移动端框内按钮 输入框宽度
+$BoxContentWidth: 92%; // 移动端框内按钮 输入框宽度
+$ButWidth: 310px; // 输入框 按钮宽度
+$UnlockWalletButWidth: 300px; // 解锁钱包按钮宽度
+$MaxWidth: 1902px; // 页面展示区域宽度
+$BgColor: #000000; // 背景颜色
+$DarkColor: #15163d; // 深色主题色
+
+//
+
+
+@font-face {
+    font-family: "SourceSansPro-Bold";
+    src: url("../assets/fonts/SourceSansPro-Black.ttf");
+}
+
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url("../assets/fonts/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SourceSansPro-Light";
+    src: url("../assets/fonts/SourceSansPro-Light.ttf");
+}
+
+@font-face {
+    font-family: "SourceSansPro-Semibold";
+    src: url("../assets/fonts/SourceSansPro-Semibold.ttf");
+}

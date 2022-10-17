@@ -1,0 +1,57 @@
+@import '../../styles/variables';
+
+.select-tab-type {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--theme-page-text);
+
+
+    .select-tab-type-item {
+        border-radius: 15px;
+        background: var(--theme-list-select-background);
+        display: flex;
+        margin-left: 6px;
+
+        div {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 0 20px;
+            min-width: 60px;
+            cursor: pointer;
+            text-align: center;
+            font-family: "SourceSansPro-Regular" !important;
+
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+                line-height: 20px;
+            }
+            
+            &.active {
+                font-weight: normal;
+                font-size: 14px;
+                background: var(--theme-list-select-active-background);
+                border-radius: 15px;
+                color: white;
+                line-height: 30px;
+                padding: 0 20px;
+                min-width: 60px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+
+
+
+    }
+}

@@ -1,0 +1,48 @@
+.page-Menu {
+    padding: 18px 0;
+
+    // @font-face {
+    //     font-family: MyFontName; //自定义字体名称
+    //     src: url('../../assets/font/SourceSansPro-Light.ttf')
+    // }
+    .ant-drawer-body {
+        background-color: var(--theme-menu-background);
+        padding: 20px 0;
+    }
+
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 16px;
+
+        img {
+            width: 14px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            margin: 4px 16px 4px;
+        }
+
+        span {
+            flex: 1;
+            text-align: left;
+            line-height: 22px;
+        }
+
+        &.active {
+            background-color: var(--theme-menu-active-background);
+        }
+    }
+
+
+
+
+    a {
+        color: white;
+        // font-family: MyFontName !important;
+        display: inline-block;
+        width: 100%;
+    }
+
+
+}

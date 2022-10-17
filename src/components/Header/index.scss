@@ -1,0 +1,301 @@
+@import '../../styles/variables';
+@import '../../styles/styles';
+
+.page-header {
+    width: 100%;
+    padding: 0 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    background-image: url('../../assets/header_bg.png');
+    background-size: 100% 100%;
+
+    @mixin account-info-box {
+        height: 32px;
+        font-size: 12px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid #FFFFFF;
+
+    }
+
+    .header {
+        max-width: 1400px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 9999999999;
+
+        .content {
+            max-width: 1200px;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+
+            .nav-logo {
+                height: 28px;
+                display: inline-block;
+                margin: 22px 0;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    display: inline-block;
+                    margin: 16px 0 16px 12px;
+                    display: flex;
+                    color: #1C3C78;
+
+                    span {
+                        font-size: 24px;
+                    }
+
+                    img {
+                        width: 78px;
+                        height: 26px;
+                        cursor: pointer;
+                    }
+                }
+
+                a {
+                    display: flex;
+                    color: #1C3C78;
+
+                    span {
+                        font-size: 24px;
+                        margin: 0 8px;
+                    }
+
+                    img {
+                        width: 101px;
+                        height: 38px;
+                        cursor: pointer;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            width: 145px;
+                            height: 30px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+
+            }
+
+
+
+            .menu-mobile {
+                display: none;
+            }
+
+            .nav-Wallet-account {
+                font-weight: normal;
+                display: inline-flex;
+                align-items: center;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    margin: 14px 12px 14px 0;
+                }
+
+                a {
+                    color: #1C3C78;
+                }
+
+
+
+
+
+                .balance {
+                    color: #FFFFFF;
+                    padding: 0 12px 0 12px;
+                    @include account-info-box;
+                    margin-right: 20px;
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        color: #FFFFFF;
+                        padding: 0 6px 0 6px;
+                        @include account-info-box;
+                        margin-right: 8px;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin: 7px 0 7px 8px;
+                    }
+
+                    p {
+                        white-space: nowrap;
+                        max-width: 140px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            max-width: 94px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+
+                    }
+                }
+
+                .account {
+                    color: #FFFFFF;
+                    padding: 0 12px;
+                    @include account-info-box;
+                    background-color: rgba(0, 0, 0, 0);
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        padding: 0 6px;
+                        font-size: 12px;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 6px;
+                    }
+
+                }
+
+                .switch-lan {
+                    color: #FFFFFF;
+                    justify-content: space-between;
+                    display: flex;
+                    cursor: pointer;
+                    margin-right: 22px;
+                    @include txt-content;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 5px;
+                    padding: 0 12px;
+                    height: 32px;
+
+                    div {
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 6px;
+                        cursor: pointer;
+                        display: inline-block;
+                        background-image: url('../../assets/switch-lan.svg');
+                    }
+                }
+            }
+
+            .nav {
+                height: 70px;
+                font-style: normal;
+                width: 100%;
+                max-width: $MaxWidth;
+                display: table;
+                margin: 0 auto;
+
+                .nav-link {
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    a {
+                        padding: 0 15px;
+                        overflow: hidden;
+                        display: inline-block;
+                        font-size: 14px;
+                        line-height: 33px;
+
+                        p {
+                            font-weight: 600;
+                            font-size: 14px;
+                            text-align: center;
+                            letter-spacing: 0.12em;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    span {
+                        padding: 0 15px;
+                        overflow: hidden;
+                        display: inline-block;
+                        color: #1C3C78;
+                        cursor: pointer;
+
+                        p {
+                            font-weight: 600;
+                            font-size: 15px;
+                            text-align: center;
+                            letter-spacing: 0.12em;
+                        }
+                    }
+
+                    .active {
+                        p {
+                            font-weight: 700;
+                            border-bottom: 1px solid #FFFFFF;
+                        }
+                    }
+                }
+
+                .nav-Wallet {
+                    line-height: 34px;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 5px;
+                    padding: 0 16px;
+                    color: #ffffff;
+                    font-weight: normal;
+                    font-size: $NavFontSize;
+                    margin: 18px 26px 8px;
+                    display: inline-flex;
+                    cursor: pointer;
+
+                    img {
+                        width: 20px;
+                        margin-right: 16px;
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        color: #15163d;
+                    }
+
+                    .balance {
+                        background-color: white;
+                        color: $DarkColor;
+                    }
+                }
+
+
+
+
+
+            }
+
+            .mobile-page-title {
+                color: white;
+                line-height: 60px;
+                text-align: center;
+            }
+
+            .mobile-menu-icon {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                margin: 18px 26px 18px 10px;
+            }
+
+        }
+
+
+    }
+
+
+}

@@ -1,0 +1,171 @@
+.page-loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999999;
+    background-color: rgba(63, 208, 201, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // @font-face {
+    //     font-family: MyFontName; //自定义字体名称
+    //     src: url('../../assets/font/SourceSansPro-Light.ttf')
+    // }
+
+    .cancel-preloader {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+
+        a {
+            background-color: #fff;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: var(--main-color);
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 30px;
+            display: block;
+            transition: all 0.4s ease;
+        }
+
+        &:hover {
+            background-color: var(--heading-color);
+            color: #fff;
+        }
+    }
+
+    .spinner {
+        margin: 120px auto;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        text-align: center;
+        animation: sk-rotate 2s infinite linear;
+    }
+
+    .dot1,
+    .dot2 {
+        width: 60%;
+        height: 60%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background-color: #3F7FFF;
+        border-radius: 100%;
+        animation: sk-bounce 2s infinite ease-in-out;
+    }
+
+    .dot2 {
+        top: auto;
+        bottom: 0;
+        animation-delay: -1s;
+    }
+
+    @keyframes sk-rotate {
+        100% {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes sk-bounce {
+        0% {
+            bottom: 0;
+        }
+
+        50% {
+            bottom: 79%;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+}
+
+@-webkit-keyframes sk-circleFadeDelay {
+
+    0%,
+    39%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+}
+
+@keyframes sk-circleFadeDelay {
+
+    0%,
+    39%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+}
+
+.get-data-loaing {
+    position: absolute;
+    //width: calc(100% - 40px);
+    //height: calc(100% - 40px);
+    width: 100%;
+    height: 100%;
+    min-height: 242px;
+    overflow: hidden;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    //left: 20px;
+    //top: 20px;
+    //right: 20px;
+    //bottom: 20px;
+    background: var(--theme-page-background);
+    color: var(--theme-page-text);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    .loading {
+        margin: 0 auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+
+        .decredit-logo {
+            width: 80%;
+            max-width: 412%;
+            display: table;
+            margin: 0 auto;
+            background-size: 100% 100%;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.2em;
+            text-align: center;
+            color: var(--theme-page-text);
+            // font-family: MyFontName !important;
+        }
+    }
+}

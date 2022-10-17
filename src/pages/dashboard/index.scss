@@ -1,0 +1,580 @@
+@import '../../styles/variables';
+@import '../../styles/_common.scss';
+
+.dashboard {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px;
+
+    @media screen and (max-width: $MobileWidth-M) {
+        padding-bottom: 40px;
+    }
+
+    .banner {
+        background-image: url('../../assets/banner.png');
+        background-size: 100% 100%;
+        overflow: hidden;
+        position: relative;
+        max-width: $MaxWidth;
+        min-height: 512px;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            min-height: 430px;
+        }
+
+        .bannner-content {
+            max-width: 1020px;
+            margin: 0 auto 100px;
+            position: relative;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                margin: 0 auto 50px;
+            }
+
+
+            .banner-data {
+                background-image: url('../../assets/banner_data_bg.png');
+                background-size: 100% 100%;
+                width: 600px;
+                padding-bottom: 38px;
+                margin-top: 32px;
+                position: relative;
+                z-index: 8;
+                overflow: hidden;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    width: 82%;
+                    margin: 22px auto 12px;
+                }
+
+
+                .banner-data-title {
+                    font-size: 18px;
+                    line-height: 20px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    padding-top: 32px;
+                    text-align: left;
+                    margin: 0 44px;
+                }
+
+                .apy {
+                    margin: 0 auto;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 24px;
+                    margin-top: 68px;
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        margin-top: 34px;
+                        min-width: 50%;
+                    }
+
+                    .balance {
+                        float: left;
+                        min-width: 220px;
+                        margin: 0 auto 22px;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            min-width: 50%;
+                        }
+
+                        .title {
+                            font-size: 14px;
+                            line-height: 20px;
+                            text-align: center;
+                            font-weight: 600;
+                            color: #FFFFFF;
+
+                            @media screen and (max-width: $MobileWidth-M) {
+                                font-size: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .data {
+                            font-size: 24px;
+                            text-align: center;
+                            font-weight: 600;
+                            color: #FFFFFF;
+                            line-height: 30px;
+                            letter-spacing: 3px;
+                            margin-top: 12px;
+
+                            @media screen and (max-width: $MobileWidth-M) {
+                                font-size: 12px;
+                                letter-spacing: 0;
+                                font-weight: 500;
+                            }
+
+                        }
+                    }
+
+
+
+                }
+
+                .progress {
+                    display: flex;
+                    margin: 6px 44px 0 44px;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        margin: 6px 22px 0 22px;
+                        display: block;
+                        overflow: hidden;
+                    }
+
+                    span {
+                        font-size: 12px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .borrow-limit-used {
+                        text-align: left;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            text-align: left;
+                            display: block;
+                        }
+                    }
+
+                    .borrow-balance {
+                        text-align: right;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            text-align: left;
+                            display: block;
+                            float: right;
+
+                            .ant-statistic {
+                                line-height: 22px;
+                            }
+                        }
+                    }
+
+                    .ant-progress {
+                        width: 60%;
+                        margin: 0 6px;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            width: calc(100% - 44px);
+                            float: left;
+                            margin: 0;
+                        }
+
+                        .ant-slider-rail {
+                            background-color: rgba(255, 255, 255, 0.4);
+                        }
+
+                        .ant-slider-track {
+                            background-color: white !important;
+                        }
+                    }
+                }
+
+                .timepiece {
+                    font-size: 15px;
+                    color: #FFFFFF;
+                    line-height: 22px;
+                    display: flex;
+                    padding: 0 78px;
+                    margin-top: 50px;
+
+                    img {
+                        width: 18px;
+                        height: 21px;
+                        margin-right: 6px;
+                    }
+                }
+
+                .credit {
+                    font-size: 15px;
+                    color: #FFFFFF;
+                    line-height: 22px;
+                    display: flex;
+                    padding: 0 44px 0 44px;
+                    text-align: left;
+                    margin-top: 16px;
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        padding: 0 22px 0 22px;
+                    }
+
+                    .credit-bun {
+                        height: 24px;
+                        line-height: 24px;
+                        text-align: center;
+                        border-radius: 75px;
+                        opacity: 0.9;
+                        padding: 0 10px;
+                        border: 1px solid #FFFFFF;
+                        margin: 0 4px;
+                        cursor: pointer;
+                        background-color: #324DF4;
+                        white-space: nowrap;
+                        word-break: break-all;
+                        overflow: hidden;
+
+                        span {
+                            color: white;
+                        }
+                    }
+
+                    .credit-disabled {
+                        height: 24px;
+                        line-height: 24px;
+                        text-align: center;
+                        border-radius: 75px;
+                        opacity: 0.9;
+                        padding: 0 12px;
+                        border: 1px solid #FFFFFF;
+                        margin: 0 6px;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        @include operation-disabled-background;
+
+                        span {
+                            color: white;
+                        }
+                    }
+
+                    img {
+                        width: 18px;
+                        height: 21px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .banner-icon {
+                width: 366px;
+                position: absolute;
+                right: 36px;
+                top: 56px;
+            }
+
+            .manual-giveaways {
+                background-image: url('../../assets/frame.png');
+                background-size: 100% 100%;
+                display: inline-block;
+                overflow: hidden;
+                padding: 12px;
+                max-width: 378px;
+                position: absolute;
+                z-index: 9;
+                right: 0;
+                top: 170px;
+
+                .manual {
+                    overflow: hidden;
+                    background-image: url('../../assets/giveaways_bg.png');
+                    background-size: 100% 100%;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    margin: 14px;
+                    text-align: left;
+                    min-height: 36px;
+                    padding: 6px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        display: inline-block;
+                        margin: 0 6px;
+                    }
+
+                    a {
+                        color: #FFFFFF;
+
+                        span {
+                            line-height: 22px;
+                            word-wrap: break-word;
+                            word-break: normal;
+
+                        }
+                    }
+
+                }
+            }
+
+            .notice {
+                background-image: url('../../assets/new_message.png');
+                background-size: 100% 100%;
+                height: 64px;
+                line-height: 64px;
+                padding: 0 30px;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 400;
+                color: #FFFFFF;
+                margin-top: 12px;
+                float: left;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    width: 92%;
+                    min-width: 380px;
+                    z-index: 99999;
+                    left: 0%;
+                    position: absolute;
+                    height: 56px;
+                    line-height: 56px;
+                }
+
+
+
+                .amount {
+                    width: calc(100% - 160px);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    margin-top: 0;
+                    font-size: 12px;
+                    padding: 0 10px;
+                    white-space: nowrap;
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
+
+                }
+
+                @mixin account-info-box {
+                    height: 32px;
+                    font-size: 12px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    cursor: pointer;
+                    border: 1px solid #FFFFFF;
+
+                }
+
+                .balance {
+                    padding: 4px 12px;
+                    color: #FFFFFF;
+                    padding: 4px 12px;
+                    height: 32px;
+                    font-size: 12px;
+                    border-radius: 15px;
+                    display: initial;
+                    cursor: pointer;
+                    border: 1px solid #FFFFFF;
+                    margin: 0 12px;
+                    overflow: hidden;
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        color: #FFFFFF;
+                        padding: 0 6px 0 6px;
+                        margin: 0 2px;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 6px;
+                    }
+
+                    span {
+                        white-space: nowrap;
+                        max-width: 140px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            max-width: 94px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .table {
+        overflow: hidden;
+        position: relative;
+        margin-top: -98px;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            margin: 0 15px;
+        }
+
+        .all-markets-icon {
+            overflow: hidden;
+            padding: 15px;
+            text-align: left;
+
+            img {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+
+            span {
+                line-height: 20px;
+                font-weight: 600;
+                color: #204E79;
+                margin: 0 6px;
+                align-items: center;
+            }
+        }
+
+        .markets-list {
+            overflow: hidden;
+            max-width: 960px;
+            margin: 0 auto;
+            position: relative;
+
+            .markets-list-tabs {
+                overflow: hidden;
+                display: flex;
+                height: 82px;
+
+                li {
+                    display: flex;
+                    text-align: center;
+                    cursor: pointer;
+                    height: 82px;
+                    width: 250px;
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                        display: flex;
+                        margin: auto 6px auto 22px;
+                        display: inline-block;
+
+                    }
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #204E79;
+                        line-height: 92px;
+
+                    }
+
+                    .active {
+                        color: #3273B8 !important;
+                    }
+
+                }
+
+                .tabs-active {
+                    z-index: 9;
+                }
+
+                .supply-markets {
+                    background-image: url('../../assets/supply_but.png');
+                    background-size: 100% 100%;
+                    left: 0;
+                }
+
+                .supply-markets-active {
+                    background-image: url('../../assets/supply_active.png');
+                    background-size: 100% 100%;
+                    left: 0;
+                }
+
+                .borrow-markets {
+                    background-image: url('../../assets/borrow_but.png');
+                    background-size: 100% 100%;
+                    margin-left: -30px;
+                    padding-left: 20px;
+                }
+
+                .borrow-markets-active {
+                    background-image: url('../../assets/borrow_active.png');
+                    background-size: 100% 100%;
+                    margin-left: -30px;
+                    padding-left: 20px;
+                }
+
+                .my-asset {
+                    background-image: url('../../assets/borrow_but.png');
+                    background-size: 100% 100%;
+                    margin-left: -42px;
+                    padding-left: 20px;
+                }
+
+                .my-asset-active {
+                    background-image: url('../../assets/borrow_active.png');
+                    background-size: 100% 100%;
+                    margin-left: -42px;
+                    padding-left: 20px;
+                }
+
+            }
+
+            .markets-clickable-area {
+                position: absolute;
+                display: flex;
+                height: 82px;
+                top: 0;
+                width: auto;
+                left: 0;
+                z-index: 99;
+
+                li {
+                    display: flex;
+                    text-align: center;
+                    height: 82px;
+                    cursor: pointer;
+                    width: 208px;
+
+                    &:first-child {
+                        width: 230px;
+                    }
+                }
+            }
+
+
+        }
+
+        .markets-list-table {
+            background: #FFFFFF;
+            box-shadow: 0px 3px 22px 0px rgba(179, 188, 219, 1);
+            max-width: 960px;
+            margin: 0 auto;
+            margin: -1px auto 32px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+
+
+
+
+
+}

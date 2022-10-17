@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="29px" viewBox="0 0 66 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>button open</title>
+    <defs>
+        <linearGradient x1="75.2668571%" y1="63.8374406%" x2="0%" y2="41.207076%" id="linearGradient-1">
+            <stop stop-color="#007DEA" offset="0%"></stop>
+            <stop stop-color="#5FB1F8" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13.000827,0 L48.7059049,0 C55.9096615,-4.87602229e-15 61.772116,5.79670163 61.8533659,13 C61.9334414,20.0991747 56.2433372,25.9191069 49.1441625,25.9991823 C49.0958346,25.9997274 49.047504,26 48.999173,26 L13.2940951,26 C6.09033853,26 0.227884002,20.2032984 0.146634078,13 C0.0665586214,5.9008253 5.75666282,0.0808931381 12.8558375,0.000817681411 C12.9041654,0.000272564805 12.952496,8.87825446e-18 13.000827,0 Z" id="path-2"></path>
+        <filter x="-3.0%" y="-7.7%" width="106.0%" height="115.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.300916125 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-4" cx="10" cy="10" r="10"></circle>
+        <filter x="-22.5%" y="-32.5%" width="175.0%" height="175.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="3" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.204642769 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7、dashboard-1-3A---supply-credit-open-button直角" transform="translate(-1341.000000, -1015.000000)">
+            <g id="compound-all备份-7" transform="translate(313.200000, 971.800000)">
+                <g id="compound--" transform="translate(50.600000, 30.000000)">
+                    <g id="button-open" transform="translate(978.000000, 14.000000)">
+                        <g id="矩形">
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="椭圆形" transform="translate(38.000000, 3.000000)">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        </g>
+                        <line x1="48.5" y1="9" x2="48.5" y2="17" id="路径-2" stroke="#B8C0C8" stroke-linecap="round" stroke-linejoin="round"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

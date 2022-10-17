@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "SourceSansPro-Bold";
+    src: url("./assets/fonts/SourceSansPro-Black.ttf");
+}
+
+@font-face {
+    font-family: "SourceSansPro-Light";
+    src: url("./assets/fonts/SourceSansPro-Light.ttf");
+}
+
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url("./assets/fonts/SourceSansPro-Regular.ttf");
+}
+
+
+html,
+body,
+span,
+p,
+div {
+    font-family:
+        'PingFang SC',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        'sans-serif';
+    ;
+}
+
+
+// h1,
+// h2 {
+//     font-family: "SourceSansPro-Bold",
+//         'basis-grotesque-medium',
+//         '-apple-system',
+//         'BlinkMacSystemFont',
+//         'Segoe UI',
+//         'Roboto',
+//         'Oxygen',
+//         'Ubuntu',
+//         'Cantarell',
+//         'Fira Sans',
+//         'Droid Sans',
+//         'Helvetica Neue',
+//         'sans-serif' !important;
+// }
+
+// h3 {
+//     font-family: "SourceSansPro-Bold",
+//         'basis-grotesque-medium',
+//         '-apple-system',
+//         'BlinkMacSystemFont',
+//         'Segoe UI',
+//         'Roboto',
+//         'Oxygen',
+//         'Ubuntu',
+//         'Cantarell',
+//         'Fira Sans',
+//         'Droid Sans',
+//         'Helvetica Neue',
+//         'sans-serif' !important;
+// }
+
+// .select-tab-type-item {
+//     font-family: "SourceSansPro-Bold",
+//         'basis-grotesque-medium',
+//         '-apple-system',
+//         'BlinkMacSystemFont',
+//         'Segoe UI',
+//         'Roboto',
+//         'Oxygen',
+//         'Ubuntu',
+//         'Cantarell',
+//         'Fira Sans',
+//         'Droid Sans',
+//         'Helvetica Neue',
+//         'sans-serif' !important;
+
+//     div {
+//         font-family: "SourceSansPro-Bold",
+//             'basis-grotesque-medium',
+//             '-apple-system',
+//             'BlinkMacSystemFont',
+//             'Segoe UI',
+//             'Roboto',
+//             'Oxygen',
+//             'Ubuntu',
+//             'Cantarell',
+//             'Fira Sans',
+//             'Droid Sans',
+//             'Helvetica Neue',
+//             'sans-serif' !important;
+//     }
+// }
+
+
+
+// div,
+// span,
+// a,
+// p {
+//     font-family: "SourceSansPro-Light",
+//         'basis-grotesque-medium',
+//         '-apple-system',
+//         'BlinkMacSystemFont',
+//         'Segoe UI',
+//         'Roboto',
+//         'Oxygen',
+//         'Ubuntu',
+//         'Cantarell',
+//         'Fira Sans',
+//         'Droid Sans',
+//         'Helvetica Neue',
+//         'sans-serif' !important;
+// }
+
+// ul,
+// li,
+// button {
+//     font-family: "SourceSansPro-Bold",
+//         'basis-grotesque-medium',
+//         '-apple-system',
+//         'BlinkMacSystemFont',
+//         'Segoe UI',
+//         'Roboto',
+//         'Oxygen',
+//         'Ubuntu',
+//         'Cantarell',
+//         'Fira Sans',
+//         'Droid Sans',
+//         'Helvetica Neue',
+//         'sans-serif' !important;
+// }
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}

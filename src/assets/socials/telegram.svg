@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>telegram blue </title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2、dashboard-1-3A-切图文件-1" transform="translate(-1498.000000, -1678.000000)">
+            <g id="last--all-" transform="translate(0.000000, 1647.000000)">
+                <g id="telegram-blue-" transform="translate(260.000000, 30.000000)" filter="url(#filter-1)">
+                    <g transform="translate(1238.000000, 1.000000)">
+                        <path d="M15.925248,-2.13162821e-14 C24.7239475,-2.13162821e-14 31.850496,7.12654848 31.850496,15.925248 C31.850496,24.7239475 24.7239475,31.850496 15.925248,31.850496 C7.12654848,31.850496 8.52651283e-13,24.7239475 8.52651283e-13,15.925248 C8.52651283e-13,7.12654848 7.12654848,-2.13162821e-14 15.925248,-2.13162821e-14 Z M20.639565,9.21674307 L7.52969442,16.0684963 C6.47651569,16.4911431 6.48984706,17.0722826 7.34305515,17.3232292 L14.3262364,18.7502455 L18.8875324,23.9833019 C19.6207581,24.3795333 20.1540131,24.1814176 20.3406524,23.3097084 L21.7594007,10.4450606 C22.0260282,9.37523565 21.346128,8.8997579 20.639565,9.21674307 Z" id="形状结合" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,308 @@
+@import '../../../../styles/_common.scss';
+
+.tablist-mobile {
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px 0px rgba(179, 188, 219, 1);
+    border-radius: 10px;
+    padding: 20px 15px 30px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $MobileWidth-M) {
+        padding: 0 12px;
+    }
+
+    .tablist-tabs {
+        background: #DFE3E6;
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+
+        margin: 18px 0;
+        width: 78%;
+        min-width: 245px;
+
+        div {
+            width: 50%;
+            float: left;
+            color: #868686;
+            line-height: 30px;
+            height: 30px;
+            text-align: center;
+            cursor: pointer;
+
+            &.active {
+                background-color: #3273B8;
+                color: white;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .ant-row {
+        .ant-col {
+            padding: 0 5px;
+        }
+    }
+
+    .data-item {
+        background: #FFFFFF;
+        height: 100%;
+        margin-bottom: 14px;
+
+        @media screen and (max-width: $MobileWidth) {
+            margin-bottom: 14px;
+            padding-bottom: 14px;
+            height: auto;
+        }
+
+        .title {
+            height: 70px;
+            padding: 0 20px;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 600;
+            color: #222222;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #EBF2FF;
+        }
+
+        .totle-data {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #EBF2FF;
+            justify-content: space-between;
+
+            span {
+                font-size: 12px;
+                font-weight: 500;
+                color: #3273B8;
+            }
+        }
+
+        .table-list {
+            width: 100%;
+
+            .tbody {
+                tr {
+                    border-bottom: 1px solid rgba(235, 242, 255, 0.7);
+
+
+                    td {
+                        height: 70px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        padding: 10px 0;
+                        vertical-align: top;
+
+                        p {
+                            font-weight: 400;
+                            color: #222222;
+                            font-size: 12px;
+                            text-align: center;
+                            line-height: 20px;
+                            @include PingFangSC-Semibold-text;
+
+                            &:nth-child(2) {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .ant-statistic {
+                            font-weight: 500;
+                        }
+
+                        .ant-statistic-content {
+                            color: #222222;
+                            font-size: 12px;
+                            line-height: 22px;
+
+                        }
+
+                        .switch-box {
+
+
+
+                            img {
+                                width: 36px !important;
+                                height: 20px !important;
+                            }
+                        }
+
+                        &:first-child {
+                            text-align: center;
+                            padding-left: 30px;
+
+                            @media screen and (max-width: $MobileWidth-M) {
+                                padding-left: 0px;
+                            }
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                display: inline-block;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        &:last-child {
+                            text-align: center;
+                            padding-right: 30px;
+                            max-width: 160px;
+                            width: 160px;
+
+                            @media screen and (max-width: $MobileWidth-M) {
+                                padding-right: 0px;
+                                width: auto;
+                            }
+
+                            p {
+
+                                text-align: center;
+                                line-height: 20px;
+                            }
+
+                            .action-buttons-disabled {
+                                height: 24px;
+                                @include operation-disabled-background;
+                                border-radius: 14px;
+                                cursor: pointer;
+                                padding: 0 12px;
+                                margin: 8px 0;
+
+                                span {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: #FFFFFF;
+                                    letter-spacing: 1px;
+                                    line-height: 22px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .action-buttons {
+                                height: 24px;
+                                @include operation-but-background;
+                                border-radius: 14px;
+                                cursor: pointer;
+                                padding: 0 12px;
+                                margin: 8px 0;
+
+                                span {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: #FFFFFF;
+                                    letter-spacing: 1px;
+                                    line-height: 22px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .switch-box {
+                                float: right;
+                                margin-right: 6px;
+                            }
+                        }
+                    }
+
+                    .collateral {
+                        .switch-box {
+                            float: right;
+                        }
+
+                        .anticon {
+                            svg {
+                                color: #273FEB;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    .Skeleton {
+
+        width: 100%;
+        height: 70px !important;
+
+        td {
+            height: 44px !important;
+            overflow: hidden;
+            margin: 13px 0;
+
+            border-radius: 4px;
+            background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(190, 190, 190, 0.2)), color-stop(37%, rgba(129, 129, 129, 0.24)), color-stop(63%, rgba(190, 190, 190, 0.2)));
+            background: linear-gradient(90deg, rgba(190, 190, 190, 0.2) 25%, rgba(129, 129, 129, 0.24) 37%, rgba(190, 190, 190, 0.2) 63%);
+            background-size: 400% 100%;
+            -webkit-animation: ant-skeleton-loading 1.4s ease infinite;
+            animation: ant-skeleton-loading 1.4s ease infinite;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+        }
+
+        @-webkit-keyframes ant-skeleton-loading {
+            0% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        @keyframes ant-skeleton-loading {
+            0% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+    }
+
+    .no-data {
+        div {
+            text-align: center;
+        }
+    }
+
+}
+
+.my-asset-connect-wallet {
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    img {
+        width: 265px;
+        height: 240px;
+        margin: 132px auto 54px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #222222;
+        line-height: 28px;
+        margin-top: 52px;
+        text-align: center;
+    }
+
+    .connect-wallet-button {
+        min-width: 150px;
+        margin: 65px auto 30px;
+        @include operation-blue-but
+    }
+
+
+}

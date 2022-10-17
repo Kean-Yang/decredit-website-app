@@ -1,0 +1,105 @@
+@import '../../../../styles/common.scss';
+
+.rewards-modal {
+    .ant-modal-content {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+
+        .ant-modal-body {
+            margin: 0;
+            padding: 0;
+
+            .rewards {
+                position: relative;
+
+                .rewards-title {
+                    width: 58px;
+                    margin: 0 auto;
+                    border-radius: 50% 50%;
+                    background-color: white;
+
+
+                    img {
+                        width: 58px;
+                        height: 58px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .rewards-content {
+                    background-color: white;
+                    margin-top: -24px;
+                    border-radius: 14px;
+                    overflow: hidden;
+                    text-align: center;
+                    border-radius: 20px;
+
+                    .content-title {
+                        background-image: url('../../../../assets//com//connect-wallet-header.png');
+                        height: 158px;
+                        width: 100%;
+                        background-size: 100% 100%;
+
+                        p {
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #FFFFFF;
+                            line-height: 30px;
+                            letter-spacing: 2px;
+                            padding-top: 40px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: #FFFFFF;
+                            line-height: 28px;
+                            letter-spacing: 2px;
+                            width: 100%;
+                            text-align: center;
+                            display: inline-block;
+                        }
+                    }
+
+                    .content {
+                        img {
+                            width: 244px;
+                            height: 246px;
+                            margin: 0 auto;
+                        }
+
+                        .desc {
+                            font-size: 18px;
+                            @include PingFangSC-Regular-text;
+                            font-weight: 400;
+                            color: #222222;
+                            line-height: 28px;
+                            padding: 0 92px;
+                            margin-top: 22px;
+                        }
+
+                        .rewards-amount {
+                            font-size: 18px;
+                            @include PingFangSC-Medium-text;
+                            font-weight: 500;
+                            color: #E56B57;
+                            line-height: 28px;
+                        }
+
+
+                    }
+
+                    .back {
+                        @include operation-blue-but;
+                        margin: 32px auto 56px;
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+}

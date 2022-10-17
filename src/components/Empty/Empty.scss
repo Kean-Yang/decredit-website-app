@@ -1,0 +1,44 @@
+.Empty {
+    color: white;
+    margin: 66px auto;
+
+    .ant-empty-description {
+        color: var(--theme-contnect-wallet-color);
+    }
+
+    .create-auction {
+        background: var(--theme-contnect-wallet-background);
+        color: var(--theme-contnect-wallet-color);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px !important;
+        padding: 0 10px;
+        height: 28px;
+        margin: 13px 0;
+        font-size: 12px;
+        -webkit-border-radius: 5px !important;
+        -moz-border-radius: 5px !important;
+        -ms-border-radius: 5px !important;
+        -o-border-radius: 5px !important;
+    }
+}
+
+.my-asset-nodata {
+    margin-bottom: 80px;
+
+    img {
+        width: 265px !important;
+        height: 240px !important;
+        margin: 132px auto 54px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 600;
+        color: #222222;
+        line-height: 28px;
+        margin-top: 52px;
+        text-align: center;
+    }
+}

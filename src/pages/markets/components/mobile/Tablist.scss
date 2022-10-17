@@ -1,0 +1,167 @@
+@import '../../../../styles/_common.scss';
+
+.AllMarkets-tablist-mobile {
+    overflow: hidden;
+
+    padding: 20px 15px 30px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $MobileWidth-M) {
+        padding: 0 12px;
+    }
+
+    .data-item {
+        background: #FFFFFF;
+        height: 100%;
+        margin-bottom: 14px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 13px 0px rgba(179, 188, 219, 0.3);
+        border-radius: 10px;
+        padding: 5px 16px 20px;
+        margin-bottom: 30px;
+
+
+
+        .data-item-title {
+            height: 35px;
+            line-height: 35px;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 600;
+            color: #222222;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #EBF2FF;
+            margin-bottom: 5px;
+
+            img {
+                width: 25px;
+                height: 25px;
+                margin: 5px;
+            }
+        }
+
+        ul {
+            overflow: hidden;
+            width: 100%;
+
+            li {
+                list-style: none;
+                overflow: hidden;
+                margin: 3px 0;
+
+                p {
+                    width: 50%;
+                    display: inline-block;
+                    line-height: 20px;
+
+                    .ant-statistic {
+                        font-size: 12px;
+
+                        .ant-statistic-content {
+                            font-size: 12px;
+                            display: flex;
+                        }
+                    }
+
+                }
+
+                div {
+                    width: 50%;
+                    display: inline-block;
+                    line-height: 20px;
+                    font-weight: 500;
+                }
+
+                &:nth-child(2) {
+                    border-bottom: 1px solid #DFE3E6;
+                    padding-bottom: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+
+
+
+    }
+
+
+    .Skeleton {
+
+        width: 100%;
+        height: 70px !important;
+
+        td {
+            height: 44px !important;
+            overflow: hidden;
+            margin: 13px 0;
+
+            border-radius: 4px;
+            background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(190, 190, 190, 0.2)), color-stop(37%, rgba(129, 129, 129, 0.24)), color-stop(63%, rgba(190, 190, 190, 0.2)));
+            background: linear-gradient(90deg, rgba(190, 190, 190, 0.2) 25%, rgba(129, 129, 129, 0.24) 37%, rgba(190, 190, 190, 0.2) 63%);
+            background-size: 400% 100%;
+            -webkit-animation: ant-skeleton-loading 1.4s ease infinite;
+            animation: ant-skeleton-loading 1.4s ease infinite;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+        }
+
+        @-webkit-keyframes ant-skeleton-loading {
+            0% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        @keyframes ant-skeleton-loading {
+            0% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+    }
+
+    .no-data {
+        div {
+            text-align: center;
+        }
+    }
+
+}
+
+.my-asset-connect-wallet {
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    img {
+        width: 265px;
+        height: 240px;
+        margin: 132px auto 54px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #222222;
+        line-height: 28px;
+        margin-top: 52px;
+        text-align: center;
+    }
+
+    .connect-wallet-button {
+        min-width: 150px;
+        margin: 65px auto 30px;
+        @include operation-blue-but
+    }
+
+
+}

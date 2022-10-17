@@ -1,0 +1,626 @@
+@import '../../styles/variables';
+@import '../../styles/_common.scss';
+
+.stake {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 100px;
+
+    @mixin operation-but {
+        border-radius: 30px;
+        min-width: 92px;
+        height: 36px;
+        padding: 0 10px;
+
+        span {
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFFFFF;
+            letter-spacing: 1px;
+            text-align: center;
+            align-items: center;
+            display: initial;
+        }
+    }
+
+    .connect-wallet-banner {
+        max-width: $MaxWidth;
+        margin: auto;
+        padding-bottom: 456px;
+        position: absolute;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            padding-bottom: 56px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .bannner {
+        background-image: url('../../assets/banner.png');
+        background-size: 100% 100%;
+        overflow: hidden;
+        position: relative;
+        max-width: $MaxWidth;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            max-width: 100%;
+            width: 100%;
+            padding-bottom: 80px;
+        }
+
+        .banner-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto 236px;
+            position: relative;
+            right: 0;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                width: 88%;
+                margin: 0 auto 236px;
+
+            }
+
+            .banner-desc {
+                margin-left: 12%;
+                color: white;
+                text-align: left;
+                padding-top: 102px;
+                z-index: 9;
+                position: relative;
+                width: 56%;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    position: absolute;
+                    margin: 0;
+                    z-index: 9;
+                    width: 56%;
+                    padding-top: 32px;
+                }
+
+
+                h1 {
+                    font-size: 42px;
+                    @include PingFangSC-Regular-text;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    line-height: 60px;
+                    letter-spacing: 1px;
+
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        font-size: 22px;
+                        line-height: 42px;
+                        margin-bottom: 6px;
+
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    @include PingFangSC-Regular-text;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    line-height: 26px;
+                    letter-spacing: 1px;
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        font-size: 14px;
+                        line-height: 22px;
+                        margin-bottom: 6px;
+                    }
+                }
+
+                .receive-airdrop {
+                    font-size: 14px;
+                    @include PingFangSC-Regular-text;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    line-height: 36px;
+                    height: 36px;
+                    border-radius: 88px;
+                    opacity: 0.9;
+                    border: 1px solid #FFFFFF;
+                    display: inline-block;
+                    padding: 0 12px;
+                    margin: 30px 12px 0;
+                    cursor: pointer;
+
+
+                }
+
+
+            }
+
+            .banner-icon {
+                width: 532px;
+                position: absolute;
+                right: 0px;
+                top: 12px;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    position: absolute;
+                    width: 66%;
+                    right: -38px;
+                    top: 46px;
+                }
+            }
+        }
+
+
+    }
+
+
+
+    .stake-connect-wallet {
+        background-image: url('../../assets/receive-airdrop.png');
+        background-size: 100% 100%;
+        max-width: 870px;
+        width: 72.5%;
+        height: 756px;
+        margin: 146px auto 40px;
+        overflow: hidden;
+        z-index: 99999;
+        position: relative;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            height: auto;
+            width: 88%;
+            margin: 146px auto 40px;
+        }
+
+        .revenue {
+            margin-top: 450px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #222222;
+            line-height: 25px;
+            @include PingFangSC-Regular-text;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                margin-top: 254px;
+                padding: 0 15px;
+            }
+
+            .airdrop {
+                font-size: 16px;
+                font-weight: 400;
+                color: #222222;
+                line-height: 22px;
+                margin-top: 20px;
+                @include PingFangSC-Regular-text;
+
+
+                .receive-airdrop {
+                    min-width: 130px;
+                    height: 24px;
+                    line-height: 24px;
+                    background: #B8C0C8;
+                    border-radius: 14px;
+                    font-size: 14px;
+                    @include PingFangSC-Regular-text;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    text-align: center;
+                    display: inline-block;
+                    margin-left: 20px;
+                    cursor: pointer;
+
+                    span {
+                        line-height: 14px;
+                        display: flex;
+
+                    }
+                }
+
+
+            }
+
+            .connect-wallet-but {
+                margin-top: 60px;
+                @include operation-blue-but;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    margin: 22px 0 52px;
+                }
+            }
+        }
+
+    }
+
+
+    .go-ranklist {
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 0 22px;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            margin: 0;
+        }
+
+        div {
+            height: 34px;
+            padding: 0 12px;
+            border-radius: 30px;
+            opacity: 0.9;
+            border: 2px solid #1E2F9E;
+            color: #1E2F9E;
+            @include txt-content;
+            font-weight: 500;
+            letter-spacing: 1px;
+            float: left;
+            cursor: pointer;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                height: 24px;
+                padding: 0 6px;
+            }
+
+
+            &:hover {
+                color: #FFFFFF;
+                border: 2px solid #FFFFFF;
+                background: linear-gradient(157deg, #273FEB 0%, #4C89F7 48%, #324DF4 100%);
+            }
+        }
+
+    }
+
+    .months {
+        margin-top: 66px !important;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            margin-top: 32px !important;
+
+        }
+    }
+
+    .ant-row {
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+
+    .stake-pool {
+        width: 92%;
+        margin: 30px 4%;
+        overflow: hidden;
+        background: #F9FAFB;
+        box-shadow: 0px 4px 26px 0px rgba(179, 188, 219, 1);
+        border-radius: 20px;
+        padding-bottom: 50px;
+        position: relative;
+
+        @media screen and (max-width: $MobileWidth-M) {
+            width: 88%;
+            margin: 22px auto 22px;
+            padding-bottom: 22px;
+
+        }
+
+
+
+        .header {
+            background-image: url('../../assets//com//connect-wallet-header.png');
+            height: 186px;
+            width: 100%;
+            background-size: 100% 100%;
+            line-height: 76px;
+            padding: 8px 12px 0;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                height: 132px;
+                line-height: 56px;
+                padding: 8px 12px 0;
+            }
+
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+
+                    img {
+                        width: 56px;
+                        height: 56px;
+                        margin: 10px 4px 10px 0;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            width: 28px;
+                            height: 28px;
+                            margin: 14px 8px 14px 0;
+                        }
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #FFFFFF;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    text-align: right;
+                    font-weight: 400;
+                    color: #FFFFFF;
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .title-not-isenable {
+                margin: 16px 0px;
+            }
+
+
+            .balance {
+                font-size: 16px;
+                font-weight: 400;
+                color: #FFFFFF;
+                line-height: 25px;
+                text-align: left;
+                margin-left: 8px;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .content {
+            border-bottom: 1px solid #CED6DC;
+            margin: 22px 22px 12px 22px;
+            padding-bottom: 12px;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                margin: 22px 12px;
+            }
+
+            ul {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px 0;
+
+                    span {
+                        font-size: 16px;
+                        line-height: 26px;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 400;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            font-size: 14px;
+                        }
+
+                        &:first-child {
+                            font-weight: 400;
+                            color: #222222;
+                            text-align: left;
+                        }
+
+                        &:last-child {
+                            font-weight: 600;
+                            color: #222222;
+                            text-align: right;
+                        }
+                    }
+
+
+
+                    .operation-but-active {
+                        @include operation-but-background;
+                        @include operation-but;
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            max-width: 102px;
+                            min-width: auto;
+                            font-size: 12px;
+                            font-weight: 400;
+                            width: 100%;
+
+                            span {
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+                    .operation-but-disabled {
+                        background: #B8C0C8;
+                        @include operation-but;
+
+                        .ant-statistic-content {
+                            height: 36px;
+                            line-height: 36px;
+                        }
+
+                        @media screen and (max-width: $MobileWidth-M) {
+                            max-width: 102px;
+                            min-width: auto;
+                            font-size: 12px;
+                            font-weight: 400;
+                            width: 100%;
+
+                            span {
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+
+        .operation {
+            overflow: hidden;
+            border-bottom: 1px solid #CED6DC;
+            margin: 22px 22px;
+            padding-bottom: 12px;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                padding: 12px 0 22px;
+                margin: 22px 12px;
+            }
+
+
+
+            .operation-but-active {
+                @include operation-but-background;
+                @include operation-but;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    max-width: 102px;
+                    min-width: auto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding: 0 6px;
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .operation-but-disabled {
+                background: #B8C0C8;
+                @include operation-but;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    max-width: 102px;
+                    min-width: auto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding: 0 6px;
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .operation-but-enable {
+                min-width: 120px;
+                @include operation-but-background;
+                @include operation-but;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    max-width: 102px;
+                    min-width: auto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    width: 100%;
+
+                    span {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+
+            .operation-withdraw {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 22px;
+
+                @media screen and (max-width: $MobileWidth-M) {
+                    margin: 0;
+                }
+
+                .but-item {
+                    width: 33.33333%;
+
+
+                    .operation-but-active {
+                        @media screen and (max-width: $MobileWidth-M) {
+                            width: 88%;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .operation-but-disabled {
+                        @media screen and (max-width: $MobileWidth-M) {
+                            width: 88%;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    @media screen and (max-width: $MobileWidth-M) {
+                        margin: 0 auto 18px;
+                        width: 33%;
+                    }
+
+
+
+
+                }
+            }
+
+            .operation-but-countdown {
+                text-align: right;
+
+                .ant-statistic-content {
+                    font-size: 16px !important;
+
+                    span {
+                        display: inline-block;
+                        height: 36px;
+                        padding: 0;
+                        margin: 0;
+                        line-height: 36px;
+                    }
+                }
+            }
+
+            .operation-countdown-disabled {
+                height: 36px;
+                padding: 0;
+                margin: 0;
+                line-height: 36px;
+            }
+
+        }
+
+        .total-stake {
+
+            margin: 0 22px;
+
+            @media screen and (max-width: $MobileWidth-M) {
+                display: block;
+            }
+
+
+
+            p {
+                font-size: 14px;
+                color: #222222;
+                line-height: 20px;
+                margin-bottom: 10px;
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+    }
+
+
+}
